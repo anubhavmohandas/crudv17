@@ -17,4 +17,6 @@ let EmployeeSc = new mongoose.Schema({
 }, {
    collection: 'employees'
 })
+// Apply Methods for Mongoose Models
+// E.g.   Model.Mongoose.DeleteMany
 module.exports = mongoose.model('Employee', EmployeeSc)

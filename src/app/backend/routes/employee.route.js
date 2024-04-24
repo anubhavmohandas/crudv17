@@ -17,6 +17,7 @@ employeeRoute.route('/').get((req, res) => {
  })
 
 // Get single employee
+// read/:id uased to find any perticular id
 employeeRoute.route('/read/:id').get((req, res) => {
   Employee.findById(req.params.id).then((result)=>{res.json(result)})
   .catch((err)=>console.log(err))
